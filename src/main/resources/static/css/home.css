@@ -1,0 +1,129 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.container .welcome-wrapper {
+    width: 100%;
+    margin: 50px 0 0 0;
+    
+}
+
+.container .welcome-wrapper h1 {
+    text-align: center;
+}
+
+.container .user-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    display: flex;
+
+}
+
+.container .user-wrapper p {
+    width: 90px;
+    display: block;
+    display: inline-flex;
+}
+
+.container .user-wrapper select {
+    height: 24px;
+    margin: 13px 0 0 20px;
+}
+
+.container .messages-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    height: calc(100% - 180px);
+}
+
+.no-messages {
+    display: none;
+}
+
+.message-item-wrapper {
+    width: 100%;
+}
+
+.message-item-wrapper .message-item {
+    max-width: 400px;
+    min-width: 40px;
+    border-radius: 10px;
+    padding: 10px
+}
+
+.message-item-wrapper .message-item-container.message-item-from {
+    
+    justify-content: right;
+    display: flex;
+}
+
+.message-item-wrapper .message-item-container.message-item-from .message-item {
+    background-color: midnightblue;
+    color: #fff;
+}
+
+.message-item-wrapper .message-item-container.message-item-to {
+    justify-content:left;
+    display: flex;
+}
+
+.message-item-wrapper .message-item-container.message-item-to .message-item {
+    background-color: #404040;
+    color: #f2f2f2;
+}
+
+/**
+ * New message wrapper
+ */
+.new-message-wrapper {
+    position: absolute;
+    width: calc(100% - 40px);
+    bottom: 19px;
+    left: 20px;
+    display: flex;
+}
+
+.new-message-wrapper form {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.new-message-wrapper form .message-text {
+    width: calc(100% - 20px);
+    border-right: 1px solid #ccc;
+}
+
+#inp-message-content {
+    margin: 0 0 0 1px;
+    width: calc(100% - 1px);
+    height: 100%;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+}
+
+.inp-send-message {
+    height: 100%;
+    display: block;
+    margin: 0 1px 0 0;
+    background: #fff;
+    outline: 0;
+    border: 0;
+    padding: 3px 10px 0 10px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.multiselect-dropdown {
+    width: 102px !important;
+    position: absolute !important;
+    top: -36px !important;
+    left: 10px !important;
+    min-width: calc(100% - 20px) !important;
+}

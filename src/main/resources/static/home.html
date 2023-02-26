@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatService</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="welcome-wrapper">
+            <h1>Kristiania Messenger</h1>
+        </div>
+
+        <div class="user-wrapper">
+            <p>Who are you?</p>
+            <select onchange="onSenderChange()" id="inp-sender-selector"></select>
+        </div>
+
+        <div class="messages-wrapper">
+            <div class="recipient-title"></div>
+            <div class="no-sender-selected-message">Please select who you are first :)</div>
+            <div class="no-messages">Be the first one to send a message!</div>
+            <div class="message-item-wrapper"></div>
+
+            <div class="new-message-wrapper">
+                <form onsubmit="return sendMessage()">
+                    <div class="recipient-list">
+                        <select id="inp-recipients-selector" multiple
+                            multiselect-hide-x="true"
+                            onchange="onRecipientsChange(this.selectedOptions)"
+                            multiselect-select-all="true"></select>
+                    </div>
+                    <div class="message-text">
+                        <textarea autofocus name="inp-message-content" class="inp-message-content" id="inp-message-content"></textarea>
+                    </div>
+                    <div class="btn-send-message-wrapper">
+                        <button class="inp-send-message" submit="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/multiselect-dropdown.js"></script>
+<script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>
